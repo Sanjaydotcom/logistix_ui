@@ -14,5 +14,5 @@ export default defineNuxtConfig({
       },
     },
   },
-  plugins: ["~/plugins/auth.client.js"],
+  plugins: [],
 })
