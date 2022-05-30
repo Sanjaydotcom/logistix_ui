@@ -1,8 +1,28 @@
+
+<script>
+import Directory from "../-components/Directory.vue";
+
+definePageMeta({
+  layout: "dashboard",
+});
+export default {
+  components: {
+    Directory,
+  },
+};
+</script>
 <template>
-  <main class="min-w-0 flex-1 border-t border-gray-200 xl:flex">
+  <div class="min-w-full max-h-screen flex-1 border-t border-gray-200 xl:flex">
     <section
       aria-labelledby="message-heading"
-      class="min-w-0 flex-1 h-full flex flex-col overflow-hidden xl:order-last"
+      class="
+        max-h-screen
+        flex-1
+        h-full
+        flex flex-col
+        overflow-hidden
+        xl:order-last
+      "
     >
       <!-- Top section -->
       <div class="flex-shrink-0 bg-white border-b border-gray-200">
@@ -672,6 +692,81 @@
           <li class="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
             <div class="sm:flex sm:justify-between sm:items-baseline">
               <h3 class="text-base font-medium">
+                <span class="text-gray-900">Monica White</span>
+                <span class="text-gray-600">wrote</span>
+              </h3>
+              <p
+                class="
+                  mt-1
+                  text-sm text-gray-600
+                  whitespace-nowrap
+                  sm:mt-0 sm:ml-3
+                "
+              >
+                <time datetime="2021-01-27T16:35">Wednesday at 4:35pm</time>
+              </p>
+            </div>
+            <div class="mt-4 space-y-6 text-sm text-gray-800">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Malesuada at ultricies tincidunt elit et, enim. Habitant nunc,
+                adipiscing non fermentum, sed est a, aliquet. Lorem in vel
+                libero vel augue aliquet dui commodo.
+              </p>
+              <p>
+                Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus
+                vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt
+                porttitor neque, velit sed. Tortor mauris ornare ut tellus sed
+                aliquet amet venenatis condimentum. Convallis accumsan et nunc
+                eleifend.
+              </p>
+              <p>
+                <strong style="font-weight: 600">Monica White</strong
+                ><br />Customer Service
+              </p>
+            </div>
+          </li>
+          <li class="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
+            <div class="sm:flex sm:justify-between sm:items-baseline">
+              <h3 class="text-base font-medium">
+                <span class="text-gray-900">Monica White</span>
+                <span class="text-gray-600">wrote</span>
+              </h3>
+              <p
+                class="
+                  mt-1
+                  text-sm text-gray-600
+                  whitespace-nowrap
+                  sm:mt-0 sm:ml-3
+                "
+              >
+                <time datetime="2021-01-27T16:35">Wednesday at 4:35pm</time>
+              </p>
+            </div>
+            <div class="mt-4 space-y-6 text-sm text-gray-800">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Malesuada at ultricies tincidunt elit et, enim. Habitant nunc,
+                adipiscing non fermentum, sed est a, aliquet. Lorem in vel
+                libero vel augue aliquet dui commodo.
+              </p>
+              <p>
+                Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus
+                vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt
+                porttitor neque, velit sed. Tortor mauris ornare ut tellus sed
+                aliquet amet venenatis condimentum. Convallis accumsan et nunc
+                eleifend.
+              </p>
+              <p>
+                <strong style="font-weight: 600">Monica White</strong
+                ><br />Customer Service
+              </p>
+            </div>
+          </li>
+
+          <li class="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
+            <div class="sm:flex sm:justify-between sm:items-baseline">
+              <h3 class="text-base font-medium">
                 <span class="text-gray-900">Joe Armstrong</span>
                 <span class="text-gray-600">wrote</span>
               </h3>
@@ -706,458 +801,11 @@
         </ul>
       </div>
     </section>
-    <aside class="hidden xl:block xl:flex-shrink-0 xl:order-first">
-      <div
-        class="
-          h-full
-          relative
-          flex flex-col
-          w-96
-          border-r border-gray-200
-          bg-gray-100
-        "
-      >
-        <div class="flex-shrink-0">
-          <div class="h-16 bg-white px-6 flex flex-col justify-center">
-            <div class="flex items-baseline space-x-3">
-              <h2 class="text-lg font-medium text-gray-900">Inbox</h2>
-              <p class="text-sm font-medium text-gray-500">10 messages</p>
-            </div>
-          </div>
-          <div
-            class="
-              border-t border-b border-gray-200
-              bg-gray-50
-              px-6
-              py-2
-              text-sm
-              font-medium
-              text-gray-500
-            "
-          >
-            Sorted by date
-          </div>
-        </div>
-        <nav aria-label="Message list" class="min-h-0 flex-1 overflow-y-auto">
-          <ul
-            role="list"
-            class="border-b border-gray-200 divide-y divide-gray-200"
-          >
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Gloria Roberston
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Velit placeat sit ducimus non sed
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
 
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Virginia Abshire
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Nemo mollitia repudiandae adipisci explicabo optio
-                      consequatur tempora ut nihil
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Kyle Gulgowski
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Doloremque reprehenderit et harum quas explicabo nulla
-                      architecto dicta voluptatibus
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Hattie Haag
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Eos sequi et aut ex impedit
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Wilma Glover
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Quisquam veniam explicabo
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Dolores Morissette
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Est ratione molestiae modi maiores consequatur eligendi et
-                      excepturi magni
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Guadalupe Walsh
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Commodi deserunt aut veniam rem ipsam
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Jasmine Hansen
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Illo illum aut debitis earum
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Ian Volkman
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Qui dolore iste ut est cumque sed
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="
-                relative
-                bg-white
-                py-5
-                px-6
-                hover:bg-gray-50
-                focus-within:ring-2
-                focus-within:ring-inset
-                focus-within:ring-blue-600
-              "
-            >
-              <div class="flex justify-between space-x-3">
-                <div class="min-w-0 flex-1">
-                  <a href="#" class="block focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                    <p class="text-sm font-medium text-gray-900 truncate">
-                      Rafael Klocko
-                    </p>
-                    <p class="text-sm text-gray-500 truncate">
-                      Aut sed aut illum delectus maiores laboriosam ex
-                    </p>
-                  </a>
-                </div>
-                <time
-                  datetime="2021-01-27T16:35"
-                  class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                  >1d ago</time
-                >
-              </div>
-              <div class="mt-1">
-                <p class="line-clamp-2 text-sm text-gray-600">
-                  Doloremque dolorem maiores assumenda dolorem facilis. Velit
-                  vel in a rerum natus facere. Enim rerum eaque qui facilis.
-                  Numquam laudantium sed id dolores omnis in. Eos reiciendis
-                  deserunt maiores et accusamus quod dolor.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-  </main>
+    <!-- Message list-->
+    <Directory />
+  </div>
 </template>
 
-<script>
-definePageMeta({
-  layout: "app",
-});
-export default {};
-</script>
 
-<style>
-</style>
+

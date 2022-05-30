@@ -1,7 +1,44 @@
-<template>
-  <div class="h-full flex flex-col">
+
+  <template>
+  <!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  const colors = require('tailwindcss/colors')
+  
+  module.exports = {
+    // ...
+    theme: {
+      extend: {
+        colors: {
+          cyan: colors.cyan,
+        },
+      },
+    },
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/line-clamp'),
+    ],
+  }
+  ```
+-->
+  <!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-gray-100">
+  <body class="h-full overflow-hidden">
+  ```
+-->
+  <div class="max-h-screen flex flex-col">
     <!-- Top nav-->
-    <header class="flex-shrink-0 relative h-16 bg-white flex items-center">
+    <header
+      class="flex-shrink-0 sticky top-0 z-50 h-16 bg-white flex items-center"
+    >
       <!-- Logo area -->
       <div class="absolute inset-y-0 left-0 lg:static lg:flex-shrink-0">
         <a
@@ -416,6 +453,7 @@
         aria-label="Sidebar"
         class="
           hidden
+          max-h-screen
           lg:block lg:flex-shrink-0 lg:bg-gray-800 lg:overflow-y-auto
         "
       >
@@ -619,13 +657,16 @@
           </a>
         </div>
       </nav>
-      <div>
-        <EmployeeSidebsar />
-      </div>
-      <slot />
+
+      <!-- Main area -->
+      <main>
+        <slot />
+      </main>
     </div>
   </div>
 </template>
+
+
 
 <script>
 export default {};

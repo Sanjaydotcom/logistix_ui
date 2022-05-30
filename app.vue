@@ -5,7 +5,7 @@
         'theme-light': !darkMode,
         'theme-dark': darkMode,
       }"
-      class="h-screen bg-themeBackground"
+      class="bg-themeBackground"
     >
       <NuxtPage />
     </div>
@@ -21,7 +21,7 @@ type Theme = "light" | "dark";
 
 const LOCAL_STORAGE_THEME_KEY = "theme";
 
-const darkMode = useState("theme", () => false);
+const darkMode = useState("theme", () => true);
 
 const setTheme = (newTheme: Theme) => {
   localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
