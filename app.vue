@@ -21,7 +21,7 @@ type Theme = "light" | "dark";
 
 const LOCAL_STORAGE_THEME_KEY = "theme";
 
-const darkMode = useState("theme", () => true);
+const darkMode = useState("theme", () => false);
 
 const setTheme = (newTheme: Theme) => {
   localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
