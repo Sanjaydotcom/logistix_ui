@@ -55,7 +55,7 @@
           </a>
 
           <a
-            href="/emp/edit"
+            href="/emp"
             class="
               text-gray-600
               hover:bg-gray-50 hover:text-gray-900

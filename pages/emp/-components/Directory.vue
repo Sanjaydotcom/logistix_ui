@@ -68,9 +68,9 @@ export default {
                 />
               </svg>
             </button>
-            <h2 class="text-lg font-medium text-gray-900">Inbox</h2>
+            <h2 class="text-lg font-medium text-gray-900">Employees</h2>
             <NuxtLink to="/emp/edit" class="text-gray-400 hover:text-gray-500">
-              <p class="text-sm font-medium text-gray-500">10 messages</p>
+              <p class="text-sm font-medium text-gray-500">10 Employees</p>
               <span class="sr-only">Home</span>
             </NuxtLink>
           </div>
@@ -90,415 +90,148 @@ export default {
         </div>
       </div>
       <nav aria-label="Message list" class="min-h-0 flex-1 overflow-y-auto">
-        <ul
-          role="list"
-          class="
-            border-b
-            bg-themeBackground
-            border-gray-200
-            divide-y divide-gray-200
-          "
-        >
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="/emp/edit" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Gloria Roberston
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Velit placeat sit ducimus non sed
-                  </p>
-                </a>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <ul role="list" class="divide-y divide-gray-200 cursor-pointer">
+          <li class="p-4">
+            <a href="/emp/edit" class="flex">
+              <img
+                class="h-10 w-10 rounded-full"
+                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-900">Calvin Hawkins</p>
+                <p class="text-sm text-gray-500">calvin.hawkins@example.com</p>
               </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+            </a>
+          </li>
+
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Kristen Ramos</p>
+              <p class="text-sm text-gray-500">kristen.ramos@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Virginia Abshire
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Nemo mollitia repudiandae adipisci explicabo optio
-                    consequatur tempora ut nihil
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Ted Fox</p>
+              <p class="text-sm text-gray-500">ted.fox@example.com</p>
             </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          </li>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Calvin Hawkins</p>
+              <p class="text-sm text-gray-500">calvin.hawkins@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Kyle Gulgowski
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Doloremque reprehenderit et harum quas explicabo nulla
-                    architecto dicta voluptatibus
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Kristen Ramos</p>
+              <p class="text-sm text-gray-500">kristen.ramos@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Hattie Haag
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Eos sequi et aut ex impedit
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Ted Fox</p>
+              <p class="text-sm text-gray-500">ted.fox@example.com</p>
             </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          </li>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Calvin Hawkins</p>
+              <p class="text-sm text-gray-500">calvin.hawkins@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Wilma Glover
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Quisquam veniam explicabo
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Kristen Ramos</p>
+              <p class="text-sm text-gray-500">kristen.ramos@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Dolores Morissette
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Est ratione molestiae modi maiores consequatur eligendi et
-                    excepturi magni
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Ted Fox</p>
+              <p class="text-sm text-gray-500">ted.fox@example.com</p>
             </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          </li>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Calvin Hawkins</p>
+              <p class="text-sm text-gray-500">calvin.hawkins@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Guadalupe Walsh
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Commodi deserunt aut veniam rem ipsam
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Kristen Ramos</p>
+              <p class="text-sm text-gray-500">kristen.ramos@example.com</p>
             </div>
           </li>
 
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Jasmine Hansen
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Illo illum aut debitis earum
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
-            </div>
-          </li>
-
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Ian Volkman
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Qui dolore iste ut est cumque sed
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
-            </div>
-          </li>
-
-          <li
-            class="
-              relative
-              bg-white
-              py-5
-              px-6
-              hover:bg-gray-50
-              focus-within:ring-2
-              focus-within:ring-inset
-              focus-within:ring-blue-600
-            "
-          >
-            <div class="flex justify-between space-x-3">
-              <div class="min-w-0 flex-1">
-                <a href="#" class="block focus:outline-none">
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                  <p class="text-sm font-medium text-gray-900 truncate">
-                    Rafael Klocko
-                  </p>
-                  <p class="text-sm text-gray-500 truncate">
-                    Aut sed aut illum delectus maiores laboriosam ex
-                  </p>
-                </a>
-              </div>
-              <time
-                datetime="2021-01-27T16:35"
-                class="flex-shrink-0 whitespace-nowrap text-sm text-gray-500"
-                >1d ago</time
-              >
-            </div>
-            <div class="mt-1">
-              <p class="line-clamp-2 text-sm text-gray-600">
-                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel
-                in a rerum natus facere. Enim rerum eaque qui facilis. Numquam
-                laudantium sed id dolores omnis in. Eos reiciendis deserunt
-                maiores et accusamus quod dolor.
-              </p>
+          <li class="p-4 flex">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="ml-3">
+              <p class="text-sm font-medium text-gray-900">Ted Fox</p>
+              <p class="text-sm text-gray-500">ted.fox@example.com</p>
             </div>
           </li>
         </ul>

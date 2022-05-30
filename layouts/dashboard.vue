@@ -37,7 +37,7 @@
   <div class="max-h-screen flex flex-col">
     <!-- Top nav-->
     <header
-      class="flex-shrink-0 sticky top-0 z-50 h-16 bg-white flex items-center"
+      class="flex-shrink-0 sticky top-0 z-50 h-14 bg-white flex items-center"
     >
       <!-- Logo area -->
       <div class="absolute inset-y-0 left-0 lg:static lg:flex-shrink-0">
@@ -659,6 +659,7 @@
       </nav>
 
       <!-- Main area -->
+
       <main>
         <slot />
       </main>
