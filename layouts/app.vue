@@ -1,3 +1,11 @@
+<script setup>
+const showInbox = false;
+const showSettings = ref(false);
+const toggleSettings = () => {
+  showSettings.value = !showSettings.value;
+};
+</script>
+
 <template>
   <div class="h-full flex flex-col">
     <!-- Top nav-->
@@ -188,6 +196,7 @@
         </div>
         <div class="ml-10 pr-4 flex-shrink-0 flex items-center space-x-10">
           <nav aria-label="Global" class="flex space-x-10">
+            <LanguageSwitch />
             <div class="relative text-left">
               <button
                 type="button"
@@ -235,6 +244,7 @@
                 To: "transform opacity-0 scale-95"
             -->
               <div
+                v-if="showInbox"
                 class="
                   origin-top-right
                   absolute
@@ -290,7 +300,12 @@
 
             <a href="#" class="text-sm font-medium text-gray-900">Reporting</a>
 
-            <a href="#" class="text-sm font-medium text-gray-900">Settings</a>
+            <div
+              @click="toggleSettings"
+              class="text-sm font-medium text-gray-900 cursor-pointer"
+            >
+              Settings
+            </div>
           </nav>
           <div class="flex items-center space-x-8">
             <span class="inline-flex">
@@ -361,6 +376,7 @@
                 To: "transform opacity-0 scale-95"
             -->
               <div
+                v-if="showSettings"
                 class="
                   origin-top-right
                   absolute
@@ -390,6 +406,7 @@
                   >
                     Your Profile
                   </a>
+                  <DarkModeSwitch />
                   <a
                     href="#"
                     class="block px-4 py-2 text-sm text-gray-700"
@@ -626,10 +643,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style>
-</style>
