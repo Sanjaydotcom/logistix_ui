@@ -1,7 +1,6 @@
 
 
 <script setup>
-
 definePageMeta({
   layout: "app",
 });
@@ -85,8 +84,7 @@ definePageMeta({
                       </div>
                     </div>
                     <div class="mt-5 flex justify-center sm:mt-0">
-                      <a
-                        href="#"
+                      <NuxtLink
                         class="
                           flex
                           justify-center
@@ -99,12 +97,12 @@ definePageMeta({
                           font-medium
                           rounded-md
                           text-gray-700
-                          bg-white
+                          bg-themeBackground
                           hover:bg-gray-50
                         "
                       >
                         View profile
-                      </a>
+                      </NuxtLink>
                     </div>
                   </div>
                 </div>
